@@ -1,0 +1,171 @@
+.food-card{
+    display: flex;
+    flex-direction: column;
+    max-width: 270px;
+    background-color: #D9D9D9;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card-img{
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card-title{
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.card-content{
+    padding: 0 20px;
+}
+
+.card-action{
+    padding: 20px;
+}
+
+.rating-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #EDEFEE;
+    color: #025000;
+    width: 20%;
+}
+
+.avatar-img{
+    width: 40px;
+    height: 40px;
+    align-self: center;
+}
+
+.avatar-name{
+    margin-left: 10px;
+}
+
+.p-xy-20{
+    padding: 0 20px;
+}
+
+.section-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #495E57;
+    gap: 10px;
+}
+
+.section-special{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.section-foods{
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.y-text-color{
+    color: #F4CE14;
+}
+
+.w-text-color{
+    color: #FFFFFF;
+}
+
+.restaurant-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.section-testimonial{
+    color: white;
+    background-color: #495E57;
+    padding: 30px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.section-testimonial-cards{
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.align-self-center{
+    align-self: center;
+}
+
+.section-about{
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.restaurant-img-container{
+    max-width: 340px;
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.about-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.about-img-container{
+    max-width: 190px;
+    width: 100%;
+    height: 280px;
+}
+
+@media(width < 576px){
+    .rating-card{
+        width: 80%;
+    }
+}
+
+@media (576px < width < 768px) {
+    .rating-card{
+        width: 40%;
+    }
+}
+
+@media (width < 768px) {
+    .section-foods{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-about{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-img-container{
+        max-width: 100%;
+    }
+}
