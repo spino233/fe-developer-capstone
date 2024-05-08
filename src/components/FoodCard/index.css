@@ -1,0 +1,37 @@
+.FoodCard {
+    display: flex;
+    flex-direction: column;
+    max-width: 270px;
+    background-color: #D9D9D9;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.FoodCard-title{
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.FoodCard-Name{
+
+}
+
+.FoodCard-Price{
+
+}
+
+.FoodCard-img {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.FoodCard-content {
+    padding: 0 20px;
+}
+
+.FoodCard-action{
+    padding: 20px;
+}
+

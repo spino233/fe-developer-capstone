@@ -1,0 +1,23 @@
+.Nav{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu-item{
+    padding-bottom: 10px;
+}
+
+.menu-item:hover{
+    border-bottom: 1px solid #474747;
+    cursor: pointer;
+}
+
+@media(width < 768px){
+    .Nav{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+}

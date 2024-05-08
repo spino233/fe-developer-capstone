@@ -69,11 +69,11 @@
     gap: 10px;
 }
 
-.y-text-color{
+.text-yellow{
     color: #F4CE14;
 }
 
-.w-text-color{
+.text-white{
     color: #FFFFFF;
 }
 
@@ -84,22 +84,8 @@
     object-position: bottom;
 }
 
-.section-testimonial{
-    color: white;
-    background-color: #495E57;
-    padding: 30px;
-}
-
 .text-center{
     text-align: center;
-}
-
-.section-testimonial-cards{
-    display: flex;
-    padding: 30px;
-    justify-content: space-around;
-    gap: 10px;
-    flex-wrap: wrap;
 }
 
 .align-self-center{
@@ -168,4 +154,16 @@
     .about-img-container{
         max-width: 100%;
     }
+}
+
+.section-special{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.section-testimonial{
+    color: white;
+    background-color: #495E57;
+    padding: 30px;
 }

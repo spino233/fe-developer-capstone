@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Markazi+Text:wght@400..700&display=swap');
+
 body {
   margin: 0;
   box-sizing: border-box;
@@ -11,4 +13,233 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+button{
+  max-width: 208px;
+  width: 100%;
+  background-color: #F4CE14;
+  border-radius: 25px;
+  height: 60px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-size: 16px;
+  border: 0;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+button:hover{
+  background-color: #495E57;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+h1,h3,h4,h5{
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+li,p{
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  white-space: pre-line;
+  font-size: 1vw;
+}
+
+li{
+  font-weight: 700;
+}
+
+p{
+  font-weight: 500;
+}
+
+h1{
+  font-weight: 500;
+  margin: 0;
+}
+
+h3{
+  font-weight: 400;
+  margin: 0;
+}
+
+h4{
+  font-weight: 400;
+}
+
+h5{
+  font-weight: 400;
+}
+
+
+@media( width > 1200px){
+  p{
+    font-size: 1vw;
+  }
+  h1{
+    font-size: 5vw;
+  }
+  h3{
+    font-size: 3vw;
+  }
+  h4{
+    font-size: 1.5vw;
+  }
+  h5{
+    font-size: 1.2vw;
+  }
+  li{
+    font-size: 1vw;
+  }
+}
+
+
+@media( 992px < width < 1200px){
+  p{
+    font-size: 2vw;
+  }
+  h1{
+    font-size: 6vw;
+  }
+  h3{
+    font-size: 4vw;
+  }
+  h4{
+    font-size: 2.5vw;
+  }
+  h5{
+    font-size: 2vw;
+  }
+  li{
+    font-size: 1.2vw;
+  }
+}
+
+@media( 768px < width < 992px){
+  p{
+    font-size: 2.5vw;
+  }
+  h1{
+    font-size: 7vw;
+  }
+  h3{
+    font-size: 5vw;
+  }
+  h4{
+    font-size: 3.5vw;
+  }
+  h5{
+    font-size: 2.5vw;
+  }
+  li{
+    font-size: 1.7vw;
+  }
+}
+
+@media( 576px < width < 768px){
+  p{
+    font-size: 3vw;
+  }
+  h1{
+    font-size: 8vw;
+  }
+  h3{
+    font-size: 6vw;
+  }
+  h4{
+    font-size: 4vw;
+  }
+  h5{
+    font-size: 3.2vw;
+  }
+  li{
+    font-size: 2.2vw;
+  }
+}
+
+@media (width < 576px) {
+  p{
+    font-size: 4vw;
+  }
+  h1{
+    font-size: 10vw;
+  }
+  h3{
+    font-size: 8vw;
+  }
+
+  h4{
+    font-size: 5vw;
+  }
+
+  h5{
+    font-size: 4.5vw;
+  }
+
+  li{
+    font-size: 4vw;
+  }
+}
+
+/* UTILITY CLASSES */
+.d-flex{
+  display: flex;
+}
+
+.p-xy-20{
+  padding: 0 20px;
+}
+
+.align-self-center{
+  align-self: center;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-yellow{
+  color: #F4CE14;
+}
+
+.text-white{
+  color: #FFFFFF;
+}
+
+.fw-regular{
+  font-weight: 400;
+}
+
+.fw-m{
+  font-weight: 500;
+}
+
+.fw-bold{
+  font-weight: 700;
+}
+
+.text-grey{
+  color: #474747;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.p-top-20{
+  padding-top: 20px;
+}
+
+.font-style-karla{
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  white-space: pre-line;
 }

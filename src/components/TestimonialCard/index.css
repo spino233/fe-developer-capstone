@@ -1,0 +1,30 @@
+.TestimonialCard{
+    display: flex;
+    flex-direction: column;
+    background-color: #EDEFEE;
+    color: #025000;
+    width: 20%;
+}
+
+@media(width < 576px){
+    .TestimonialCard{
+        width: 80%;
+    }
+}
+
+@media (576px < width < 768px) {
+    .TestimonialCard{
+        width: 40%;
+    }
+}
+
+
+.TestimonialCard-img{
+    width: 40px;
+    height: 40px;
+    align-self: center;
+}
+
+.TestimonialCard-name{
+    margin-left: 10px;
+}
