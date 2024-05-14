@@ -1,0 +1,7 @@
+.BookingForm{
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}

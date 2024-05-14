@@ -13,12 +13,16 @@
     justify-content: space-between;
 }
 
-.FoodCard-Name{
+.FoodCard-name{
 
 }
 
-.FoodCard-Price{
+.FoodCard-price{
 
+}
+
+.FoodCard-icon{
+    vertical-align: middle;
 }
 
 .FoodCard-img {

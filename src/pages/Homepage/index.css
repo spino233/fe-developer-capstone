@@ -1,0 +1,11 @@
+.Homepage-special{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.Homepage-testimonial{
+    color: white;
+    background-color: #495E57;
+    padding: 30px;
+}

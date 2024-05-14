@@ -36,8 +36,8 @@ export const foodItems = [
         title: 'Greek Salad',
         price: '$12.99',
         content: `Lorem ipsum dolor sit amet, consectetur a
-                  dipiscing elit, sed do eiusmod tempor 
-                  incididunt ut labore et dolore magna aliqua.`,
+        dipiscing elit, sed do eiusmod tempor 
+        incididunt ut labore et dolore magna aliqua.`,
         bottomLabel: 'Order for a delivery',
         bottomIconSrc: undefined
     },

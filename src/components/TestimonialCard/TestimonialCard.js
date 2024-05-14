@@ -8,7 +8,7 @@ const TestimonialCard = ({title, profileImgSrc, profileName, content}) => {
                 <img src={profileImgSrc} className='TestimonialCard-img' alt='profile avatar'/>
                 <h5 className='TestimonialCard-name'>{profileName}</h5>
             </div>
-            <p className='p-xy-20'>{content}</p>
+            <p className='lead p-xy-20'>{content}</p>
         </article>
     )
 };

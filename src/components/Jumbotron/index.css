@@ -6,8 +6,12 @@
     margin: 10px 0;
 }
 
+.Jumbotron-article{
+    max-width: 300px;
+}
+
 .jumbo-img-container{
-    max-width: 340px;
+    max-width: 300px;
     width: 100%;
     height: 450px;
     position: relative;
@@ -28,5 +32,8 @@
     .section-header {
         flex-direction: column;
         align-items: center;
+    }
+    .Jumbotron-article{
+        text-align: center;
     }
 }

@@ -3,10 +3,10 @@ import './index.css'
 const About = ({title, subTitle, content, imgSrcOne, imgSrcTwo}) => {
     return (
         <section className='About'>
-            <article>
+            <article className='About-p'>
                 <h1>{title}</h1>
                 <h3>{subTitle}</h3>
-                <p className='text-grey'>{content}</p>
+                <p className='lead text-grey'>{content}</p>
             </article>
             <div className='d-flex p-top-20'>
                 <picture className='About-img-container'>

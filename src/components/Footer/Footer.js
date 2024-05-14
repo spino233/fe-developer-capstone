@@ -1,4 +1,7 @@
 import './Footer.css';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
 export default function Footer(){
     return (
         <footer>
@@ -34,9 +37,11 @@ export default function Footer(){
             </section>
             <section className='d-flex-column text-center-md'>
                 <h4>Social Media Links</h4>
-                <a href='https://www.facebook.com/'>Facebook</a>
-                <a href='https://www.instagram.com/'>Instagram</a>
-                <a href='https://www.tiktok.com/en/'>Tik tok</a>
+                <div className='d-flex jc-between'>
+                    <FacebookIcon/>
+                    <InstagramIcon/>
+                    <TwitterIcon/>
+                </div>
             </section>
         </footer>
     )

@@ -1,22 +1,21 @@
-import './Main.css';
-import Jumbotron from "../Jumbotron/Jumbotron";
-import FoodCardList from "../FoodCardList/FoodCardList";
-import TestimonialCardList from "../TestimonialCardList/TestimonialCardList";
+import './index.css';
+import Jumbotron from "../../components/Jumbotron/Jumbotron";
 import {aboutObj, foodItems, jumbotronObj, testimonialItems} from "../../model/constant";
-import About from "../About/About";
-
-export default function Main() {
+import FoodCardList from "../../components/FoodCardList/FoodCardList";
+import TestimonialCardList from "../../components/TestimonialCardList/TestimonialCardList";
+import About from "../../components/About/About";
+const Homepage = () => {
     return (
         <main>
             <Jumbotron {...jumbotronObj}/>
             <section>
-                <section className='section-special'>
+                <section className='Homepage-special'>
                     <h2>Specials</h2>
                     <button>Online Menu</button>
                 </section>
                 <FoodCardList items={foodItems}/>
             </section>
-            <section className='section-testimonial'>
+            <section className='Homepage-testimonial'>
                 <h2 className='text-center'>Testimonials</h2>
                 <TestimonialCardList items={testimonialItems}/>
             </section>
@@ -24,3 +23,6 @@ export default function Main() {
         </main>
     )
 }
+
+export default Homepage;
+
