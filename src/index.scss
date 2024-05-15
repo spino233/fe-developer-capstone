@@ -220,6 +220,15 @@ h4, .h4 { font-size: $h4-font-size; }
 h5, .h5 { font-size: $h5-font-size; }
 h6, .h6 { font-size: $h6-font-size; }
 
+input, select{
+  padding: 12px 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-family: $font-family-karla;
+  font-size: $lead-font-size;
+  font-weight: $lead-font-weight;
+}
+
 .lead {
   font-family: $font-family-karla;
   font-size: $lead-font-size;
@@ -354,6 +363,10 @@ button:not([disabled]):hover{
   cursor: pointer;
 }
 
+.bg-color-green{
+  background-color: #495E57
+}
+
 /*h1,h3,h4,h5{
   font-family: "Markazi Text", serif;
   font-optical-sizing: auto;
@@ -399,6 +412,10 @@ h5{
 a{
   text-decoration: none;
   color: black;
+}
+
+label{
+  width: 200px;
 }
 
 a:visited
@@ -536,6 +553,10 @@ a:visited
 
 .jc-center{
   justify-content: center;
+}
+
+.jc-evenly{
+  justify-content: space-evenly;
 }
 
 .p-xy-20{

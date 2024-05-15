@@ -2,6 +2,7 @@ import BookingForm from "../../components/BookingForm/BookingForm";
 import {useReducer, useState} from "react";
 import {fetchAPI, submitAPI} from "../../utils/fakeApi";
 import {useNavigate} from "react-router-dom";
+import table from "../../assets/img/table-imga.jpg";
 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -63,24 +64,25 @@ const BookingPage = () => {
         data.set("occasion", occasion);
 
         const result = submitAPI(data);
-        if(result){
+        if (result) {
             navigate('/booking-confirm');
         }
     }
 
     return (
-        <div style={{width: '100%'}}>
-            <BookingForm date={date}
-                         onChangeDate={onChangeDate}
-                         time={time}
-                         onChangeTime={onChangeTime}
-                         guestN={guestN}
-                         onChangeGuestN={onChangeGuestN}
-                         occasion={occasion}
-                         onChangeOccasion={onChangeOccasion}
-                         availableTime={availableTimes.times}
-                         onSubmit={onSubmit}/>
-        </div>
+        <BookingForm className="BookingForm"
+                     date={date}
+                     onChangeDate={onChangeDate}
+                     time={time}
+                     onChangeTime={onChangeTime}
+                     guestN={guestN}
+                     onChangeGuestN={onChangeGuestN}
+                     occasion={occasion}
+                     onChangeOccasion={onChangeOccasion}
+                     availableTime={availableTimes.times}
+                     imgSrc={table}
+                     altImg={'table'}
+                     onSubmit={onSubmit}/>
     )
 }
 
