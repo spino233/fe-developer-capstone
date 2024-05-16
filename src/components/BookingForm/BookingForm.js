@@ -1,10 +1,11 @@
 import './index.css';
 
-const BookingForm = ({
+const BookingForm = ({   name,
                          date,
                          time,
                          guestN,
                          occasion,
+                         onChangeName,
                          onChangeDate,
                          availableTime,
                          onChangeTime,
@@ -27,26 +28,38 @@ const BookingForm = ({
                         you need.</p>
                 </div>
             </section>
-            <section className='d-flex-column'>
-                <div className='d-flex d-sm-flex-column gap-20 p-30 jc-evenly'>
+            <section className='d-flex-column d-md-flex-column jc-center align-self-center w-50 w-sm-100'>
+                <div className='d-flex d-md-flex-column gap-20 p-30 jc-between'>
+                    <label htmlFor="res-date" className='lead fw-bold'>Name</label>
+                    <input type="text"
+                           id="res-name"
+                           value={name}
+                           placeholder='Insert Name'
+                           required
+                           onChange={(e) => onChangeName(e.target.value)}
+                    />
+                </div>
+                <div className='d-flex d-md-flex-column gap-20 p-30 jc-between'>
                     <label htmlFor="res-date" className='lead fw-bold'>Date</label>
                     <input type="date"
                            id="res-date"
                            value={date}
+                           required
                            onChange={(e) => onChangeDate(e.target.value)}
                     />
                 </div>
-                <div className='d-flex d-sm-flex-column gap-20 p-30 jc-evenly'>
+                <div className='d-flex d-md-flex-column gap-20 p-30 jc-between'>
                     <label htmlFor="res-time" className='lead fw-bold'>Reservation Time</label>
                     <select id="res-time"
                             value={time}
+                            required
                             onChange={(e) => onChangeTime(e.target.value)}>
                         <option>Select time..</option>
                         {availableTime.map((time, index) => (
                             <option data-testid='select-option' key={index}>{time}</option>))}
                     </select>
                 </div>
-                <div className='d-flex d-sm-flex-column gap-20 p-30 jc-evenly'>
+                <div className='d-flex d-md-flex-column gap-20 p-30 jc-between'>
                     <label htmlFor="guests" className='lead fw-bold'>Number of guests</label>
                     <input type="number"
                            placeholder="1"
@@ -54,9 +67,10 @@ const BookingForm = ({
                            max="10"
                            id="guests"
                            value={guestN}
+                           required
                            onChange={(e) => onChangeGuestN(Number(e.target.value))}/>
                 </div>
-                <div className='d-flex d-sm-flex-column gap-20 p-30 jc-evenly'>
+                <div className='d-flex d-md-flex-column gap-20 p-30 jc-between'>
                     <label htmlFor="occasion" className='lead fw-bold'>Occasion</label>
                     <select id="occasion"
                             value={occasion}
@@ -67,8 +81,9 @@ const BookingForm = ({
                     </select>
                 </div>
                 <div className='d-flex gap-20 p-30 jc-evenly'>
-                    <button type="submit" disabled={!date || !time || !guestN} onClick={(_) => onSubmit()}>Make your
-                        reservation
+                    <button type="submit" aria-label="On Click Make your reservation"
+                            disabled={!date || !time || !guestN || !name} onClick={(_) => onSubmit()}>
+                        Make your reservation
                     </button>
                 </div>
             </section>

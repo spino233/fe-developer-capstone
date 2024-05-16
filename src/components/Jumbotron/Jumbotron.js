@@ -1,5 +1,7 @@
 import './index.css';
+import {useNavigate} from "react-router-dom";
 const Jumbotron = ({title, subtitle, description, callToActionButtonLabel, imgSrc, altImg}) => {
+    const navigate = useNavigate();
     return (
         <section className='section-header'>
             <article className='Jumbotron-article align-self-center'>
@@ -8,7 +10,7 @@ const Jumbotron = ({title, subtitle, description, callToActionButtonLabel, imgSr
                 <p className='lead text-white'>
                     {description}
                 </p>
-                <button>{callToActionButtonLabel}</button>
+                <button onClick={() => navigate('/booking')} aria-label={callToActionButtonLabel}>{callToActionButtonLabel}</button>
             </article>
             <div className='jumbo-img-container'>
                 <img src={imgSrc} alt={altImg} className='jumbo-img'/>

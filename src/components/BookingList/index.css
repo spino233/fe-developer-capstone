@@ -1,0 +1,7 @@
+.BookingList{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: center;
+    gap: 10px;
+}

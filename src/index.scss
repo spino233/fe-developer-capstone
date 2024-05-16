@@ -363,10 +363,6 @@ button:not([disabled]):hover{
   cursor: pointer;
 }
 
-.bg-color-green{
-  background-color: #495E57
-}
-
 /*h1,h3,h4,h5{
   font-family: "Markazi Text", serif;
   font-optical-sizing: auto;
@@ -616,4 +612,16 @@ a:visited
   font-optical-sizing: auto;
   font-style: normal;
   white-space: pre-line;
+}
+
+.bg-color-green{
+  background-color: #495E57
+}
+
+.bg-color-yellow{
+  background-color: yellow;
+}
+
+.w-50{
+  width: 50%;
 }

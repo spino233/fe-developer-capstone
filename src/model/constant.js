@@ -88,5 +88,5 @@ export const jumbotronObj = {
                 twist.`,
     callToActionButtonLabel: 'Reserve a table',
     imgSrc: restaurantFood,
-    altImg: 'restaurant food'
+    altImg: 'restaurant food',
 }

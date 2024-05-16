@@ -1,5 +1,5 @@
 import BookingForm from "../../components/BookingForm/BookingForm";
-import {useReducer, useState} from "react";
+import {useEffect, useReducer, useState} from "react";
 import {fetchAPI, submitAPI} from "../../utils/fakeApi";
 import {useNavigate} from "react-router-dom";
 import table from "../../assets/img/table-imga.jpg";
@@ -27,9 +27,10 @@ const initialState = {
     time: []
 }
 
-const BookingPage = () => {
+const BookingPage = ({addReservation}) => {
     const navigate = useNavigate();
 
+    const [name, setName] = useState('');
     const [date, setDate] = useState('');
     const [time, setTime] = useState('');
     const [guestN, setGuestN] = useState(1);
@@ -39,8 +40,13 @@ const BookingPage = () => {
         dispatch({type: 'UPDATE_TIMES', selectedDate: new Date(selectedDate)});
     };
 
+    const onChangeName = (value) => {
+        setName(value);
+    }
+
     const onChangeDate = (value) => {
         setDate(value);
+        setTime('');
         updateTimes(value);
     }
 
@@ -58,6 +64,7 @@ const BookingPage = () => {
 
     const onSubmit = () => {
         const data = new FormData();
+        data.set("name", name);
         data.set("date", date);
         data.set("time", time);
         data.set("numberOfGuest", guestN);
@@ -65,12 +72,22 @@ const BookingPage = () => {
 
         const result = submitAPI(data);
         if (result) {
-            navigate('/booking-confirm');
+            addReservation({
+                id: Date.now().valueOf(),
+                name,
+                date,
+                time,
+                guestN,
+                occasion
+            })
+            navigate('/reservations');
         }
     }
 
     return (
-        <BookingForm className="BookingForm"
+        <BookingForm className="BookingForm jc-center"
+                     name={name}
+                     onChangeName={onChangeName}
                      date={date}
                      onChangeDate={onChangeDate}
                      time={time}

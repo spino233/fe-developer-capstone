@@ -1,0 +1,15 @@
+.Booking{
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    max-width: 270px;
+    background-color: grey;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.Booking-id, .Booking-date, .Booking-time, .Booking-guest, .Booking-occasion{
+    display: flex;
+    justify-content: space-between;
+}

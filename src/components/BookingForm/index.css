@@ -20,9 +20,18 @@
     object-position: bottom;
 }
 
+@media (width < 768px){
+    .d-md-flex-column{
+        flex-direction: column;
+    }
+}
+
 @media (width < 576px){
     .d-sm-flex-column{
         flex-direction: column;
+    }
+    .w-sm-100{
+        width: 100%;
     }
 }
 
