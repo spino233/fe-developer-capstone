@@ -82,7 +82,7 @@ const BookingForm = ({   name,
                 </div>
                 <div className='d-flex gap-20 p-30 jc-evenly'>
                     <button type="submit" aria-label="On Click Make your reservation"
-                            disabled={!date || !time || !guestN || !name} onClick={(_) => onSubmit()}>
+                            disabled={!date || !time || (!guestN && guestN > 0) || !name} onClick={(_) => onSubmit()}>
                         Make your reservation
                     </button>
                 </div>
